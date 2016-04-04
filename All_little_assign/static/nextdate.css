@@ -1,0 +1,35 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	display:flex;
+	background-color: rgb(123,161,168);
+}
+
+.box {
+	margin:auto;
+	width:200px;
+	padding:8px;
+	border-radius: 1em;
+	background-color: #aaa;
+	box-shadow: #333 0px 0px 20px;
+}
+
+.box p{
+	margin:4px 0px;
+}
+
+.box input {
+	opacity: 0.5;
+	width:150px;
+	position:relative;
+	float: right;
+}
+
+#nextdate {
+	margin:3px 0px;
+	position: relative;
+	float: right;
+}
