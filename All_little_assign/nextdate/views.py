@@ -6,7 +6,7 @@ from nextdate import Date_my, nextdate, getLunarValues, getWeekValues
 # Create your views here.
 def index(request):
 	content = {}
-	return render_to_response('index.html',content)
+	return render_to_response('index_qa.html',content)
 
 def compute(request):
 	if request.method == "GET":

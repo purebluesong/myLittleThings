@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>sprout</title>
+	<link rel="stylesheet" type="text/css" href="/static/uid.css">
+	<script type="text/javascript" href="/static/js/uid.js"></script>
+</head>
+<body>
+	<div class="container">
+		<p><span>昵称</span>
+			<input type="text" name="nickname" id="user_name"></p>
+		<p><span>邮箱</span>
+			<input type="text" name="email" list="email_suffix" id="user_email" >
+			<datalist id="email_suffix">
+				<option value="@163.com" />
+				<option value="@yeah.net" />
+				<option value="@126.com" />
+				<option value="@hotmail.com" />
+				<option value="@gmail.com" />
+				<option value="@qq.com" />	
+				<option value="@sina.com" />	
+				<option value="@tom.com" />	
+				<option value="@sohu.com" />	
+				<option value="@guokr.com" />	
+				<option value="@aliyun.com" />	
+			</datalist>
+		</p>
+		<hr>
+		<p><span>密码</span><input type="password" name="pwd" id="user_pwd"></p>
+		<p><span>重复密码</span><input type="password" name="pwd_repeat" id="user_pwd_repeat"></p>
+		<p><button id="btn_cancel">取消</button>
+			<button id="btn_confirm">注册</button>
+		</p>
+	</div>
+</body>
+</html>

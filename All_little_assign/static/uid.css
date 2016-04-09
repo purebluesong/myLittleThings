@@ -1,0 +1,63 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	display:flex;
+	background-color: #fff;
+}
+
+.container {
+	display: block;
+	width: 250px;
+	background-color: #e5e5e5;
+	height: 250px;
+	margin: auto;
+	border: 2px solid #999;
+}
+
+hr {
+	margin: 0px 20px;
+}
+
+.container p{
+	margin: auto;
+	display:block;
+	width:84%;
+	padding:8% 8% 3% 8%;
+}
+
+
+.container p span {
+	display:inline-block;
+	width:66px;
+}
+
+.container p input {
+	float:right;
+	width:60%;
+}
+
+button {
+	border-radius: 5px;
+	width:70px;
+	height:30px;
+	background-color: #999;
+	padding:0px;
+	border: 0px solid #555;
+}
+
+button :hover {
+	background-color: #67a9a9;
+	box-shadow: #555 0 0 10px;
+}
+
+#btn_cancel {
+
+}
+
+#btn_confirm {
+	float: right;
+}
+

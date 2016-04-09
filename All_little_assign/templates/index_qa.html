@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>nextdate</title>
+	<link rel="stylesheet" type="text/css" href="/static/nextdate.css">
+</head>
+<body>
+	<div class="box">
+	<form action="/nextdate/compute" method="get" style="">
+		<p>年:<input type="text" id="year" name="year" value="1994" pattern="[1-2][0-9]{3}" ></p>
+		<p>月:<input type="text" id="month" name="month" value="10" pattern="[0-1]?[0-9]"></p>
+		<p>日:<input type="text" id="day" name="day" value="14" pattern="[0-3]?[0-9]"></p>
+		<input type="submit" id="nextdate"></input>
+		<div style="clear: both"></div>
+	</form>
+	<hr style="opacity:0.3;margin:3px;">
+	<div>
+		<div class="calendar">
+			<p class="date" >年：<span id="year_n"></span></p>
+			<p class="date" >月：<span id="month_n"></span></p>
+			<p class="date" >日：<span id="day_n"></span></p>
+			<p class="date" >星期：<span id="week_n"></span></p>
+		</div>
+		<div class="calendar">
+			<p class="date" >阴历：
+				<span id="lunar_year_n"></span>
+				<span id="lunar_month_n"></span>
+				<span id="lunar_day_n"></span>
+			</p>
+		</div>
+	</div>
+	</div>
+	<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+      	$("#nextdate").click(function(){
+	        var year = $("#year").val();
+	        var month = $("#month").val();
+	 		var day = $("#day").val();
+	 		if(year < 2100){
+				$.getJSON("/nextdate/compute",{year:year,month:month,day:day}, function(ret){
+					$('#year_n').text(ret.year)
+					$('#month_n').text(ret.month)
+					$('#day_n').text(ret.day)
+					$('#week_n').text(ret.week)
+					$('#lunar_year_n').text(ret.lunar_year)
+					$('#lunar_month_n').text(ret.lunar_month)
+					$('#lunar_day_n').text(ret.lunar_day)
+	        	});
+	 		}
+	 		return false;
+	      });
+	    });
+	</script>
+</body>
+</html>

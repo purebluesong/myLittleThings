@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'nextdate',
+    'uid_sprout'
 ]
 
 MIDDLEWARE_CLASSES = [

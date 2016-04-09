@@ -17,10 +17,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from nextdate import urls as nextdate_urls
+from uid_sprout import urls as uid_urls
 from All_little_assign import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_URL}),
     url(r'^nextdate/', include(nextdate_urls)),
+    url(r'^sprout/',include(uid_urls)),
 ]
