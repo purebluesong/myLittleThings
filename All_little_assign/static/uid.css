@@ -8,6 +8,7 @@ body {
 	background-color: #fff;
 }
 
+
 .container {
 	display: block;
 	width: 250px;
@@ -39,22 +40,30 @@ hr {
 	width:60%;
 }
 
-button {
+.mybutton {
+	display:inline-block;
 	border-radius: 5px;
 	width:70px;
-	height:30px;
+	height:20px;
+	margin:20px;
 	background-color: #999;
-	padding:0px;
+	padding: 5px 0px;
 	border: 0px solid #555;
+	text-align: center;
 }
 
-button :hover {
-	background-color: #67a9a9;
+.container p:hover{
+	background-color: #ffffff;
 	box-shadow: #555 0 0 10px;
 }
 
-#btn_cancel {
+.mybutton:hover {
+	background-color: #6c6c6c;
+	box-shadow: #555 0 0 10px;
+}
 
+.mybutton:active {
+	background-color: #fff;
 }
 
 #btn_confirm {

@@ -3,4 +3,5 @@ import views
 
 urlpatterns = [
 	url(r'^$',views.index),
+	url(r'^reg$',views.regeister),
 ]

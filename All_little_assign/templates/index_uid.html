@@ -2,14 +2,13 @@
 <head>
 	<title>sprout</title>
 	<link rel="stylesheet" type="text/css" href="/static/uid.css">
-	<script type="text/javascript" href="/static/js/uid.js"></script>
 </head>
 <body>
 	<div class="container">
 		<p><span>昵称</span>
-			<input type="text" name="nickname" id="user_name"></p>
+			<input type="text" name="nickname" id="user_name" ></p>
 		<p><span>邮箱</span>
-			<input type="text" name="email" list="email_suffix" id="user_email" >
+			<input type="text" name="email" list="email_suffix" id="user_email" value="@163.com" >
 			<datalist id="email_suffix">
 				<option value="@163.com" />
 				<option value="@yeah.net" />
@@ -25,11 +24,13 @@
 			</datalist>
 		</p>
 		<hr>
-		<p><span>密码</span><input type="password" name="pwd" id="user_pwd"></p>
-		<p><span>重复密码</span><input type="password" name="pwd_repeat" id="user_pwd_repeat"></p>
-		<p><button id="btn_cancel">取消</button>
-			<button id="btn_confirm">注册</button>
+		<p><span>密码</span><input type="password" name="pwd" id="user_pwd" >		
 		</p>
+		<p><span>重复密码</span><input type="password" name="pwd_repeat" id="user_pwd_repeat" ></p>
+		<div class="mybutton" id="btn_cancel">取消</div>
+		<div class="mybutton" id="btn_confirm">注册</div>
 	</div>
+	<script src="/static/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/static/js/uid.js" type="text/javascript"></script>
 </body>
 </html>
